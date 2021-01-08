@@ -41,15 +41,25 @@ body{
     font-weight: bold;
 }
 
+.montanhas_artigos{
+    position: relative;
+}
+
+.artigo_title{
+    padding: 12px 0 12px;
+    color: green;
+}
+
 .artigo__descricao{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .artigo__img{
-    width: 900px;
+    flex: 1 0 320px;
     background-color: green;
+    position: absolute;
+    top: 0;
+    z-index: 10;
 }
 
 .img{
@@ -57,5 +67,10 @@ body{
 }
 
 .artigo__texto{
-    box-shadow: 1px 1px 1px 1px #ccc;
+    max-width: 550px;
+    position: absolute;
+    right: 0;
+    box-shadow: 1px 1px 16px 1px #ccc;
+    padding: 2em 4em 2em 6em;
+    text-align: justify;
 }
