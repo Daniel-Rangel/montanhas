@@ -43,7 +43,6 @@ body{
 
 .montanhas_artigos{
     position: relative;
-    width: 100%;
     height: 0;
     padding-bottom: 40%;
 }
@@ -58,7 +57,7 @@ body{
 }
 
 .artigo__img{
-    flex: 1 0 320px;
+    flex: 1 0 120px;
     background-color: green;
     position: absolute;
     top: 0;
@@ -70,7 +69,7 @@ body{
 }
 
 .artigo__texto{
-    max-width: 550px;
+    max-width: 450px;
     position: absolute;
     right: 0;
     box-shadow: 1px 1px 16px 1px #ccc;
