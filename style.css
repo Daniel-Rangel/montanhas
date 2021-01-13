@@ -40,27 +40,3 @@ body{
     padding: 4px 52px;
     font-weight: bold;
 }
-
-.artigo__descricao{
-    display: flex;
-    position: relative;
-}
-
-.artigo__img{
-    min-width: 320px;
-    position: absolute;
-}
-
-.img{
-    width: 100%;
-}
-
-.artigo__texto{
-    position: absolute;
-    right: 20px;
-    width: 50%;
-    padding: 50px 150px 50px 80px;
-    box-shadow: 1px 1px 1px 1px #ccc;
-    text-align: justify;
-    z-index: -10;
-}
