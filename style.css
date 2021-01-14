@@ -40,3 +40,33 @@ body{
     padding: 4px 52px;
     font-weight: bold;
 }
+
+/* descrição */
+
+.montanhas_artigos{
+    width: 800px;
+    display: flex;
+    position: relative;
+}
+
+.artigo__img{
+    position: absolute;
+    left: 0;
+}
+
+.artigos__descricao{
+    flex: 1 0 360px;
+
+}
+
+.artigo_title{
+    padding: 20px;
+}
+
+.artigo__texto{
+    box-shadow: 2px 0px 20px -4px #ccc;
+    width: 500px;
+    margin: 0px 10px 80px 230px;
+    padding: 30px 40px 30px 120px;
+    text-align: justify;
+}
