@@ -41,6 +41,12 @@ body{
     font-weight: bold;
 }
 
+.menu__item:hover{
+    color: white;
+    background: green;
+    cursor: pointer;
+}
+
 /* descrição */
 
 .montanhas_artigos{
