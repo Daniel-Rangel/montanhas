@@ -16,7 +16,12 @@ const montes = [
     }
 ]
 
+const litas = document.querySelectorAll(".menu__item")
+let img = document.querySelector(".img")
+let titulo = document.querySelector(".artigo_title").innerHTML
 
-const img = document.querySelector('.img').src = montes[1].img
-
-console.log(img)
+for(let item of litas){
+    item.addEventListener("click", () => {
+        console.log(item.innerHTML)
+    })
+}
