@@ -26,9 +26,12 @@ listas.forEach(element => {
     element.addEventListener('click', ()=>{
         for(let mt of montes){
             if(mt.nome == element.innerHTML){
-                document.querySelector('.img').src = mt.img
-                document.querySelector('.artigo_title').innerHTML = mt.nome
-                document.querySelector('.artigo__texto').innerHTML = mt.descricao
+                let animacao = setTimeout(()=>{
+                    document.querySelector('.artigo_title').innerHTML = mt.nome
+                    document.querySelector('.img').src = mt.img
+                    document.querySelector('.artigo__texto').innerHTML = mt.descricao
+                },4000)
+                animacao()
             }
         }
     })
