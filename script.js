@@ -25,12 +25,16 @@ let titulo = document.querySelector(".artigo_title")
 listas.forEach(element => {
     element.addEventListener('click', ()=>{
         for(let mt of montes){
+
+            document.querySelector('.artigo__img').classList.remove('animacao-Ativa')
+            
             if(mt.nome == element.innerHTML){
                 let animacao = setTimeout(()=>{
+                    document.querySelector('.artigo__img').classList.add('animacao-Ativa')
                     document.querySelector('.artigo_title').innerHTML = mt.nome
                     document.querySelector('.img').src = mt.img
                     document.querySelector('.artigo__texto').innerHTML = mt.descricao
-                },4000)
+                },10)
                 animacao()
             }
         }

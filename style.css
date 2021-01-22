@@ -59,7 +59,11 @@ body{
 .artigo__img{
     position: absolute;
     left: 0;
-    animation: trocar 4s alternate;
+    
+}
+
+.img{
+    width: 100%;
 }
 
 .artigos__descricao{
@@ -85,6 +89,10 @@ body{
     height: 200px;
     animation: trocar 4s infinite alternate;
 } */
+
+.animacao-Ativa{
+    animation: trocar 2s alternate;
+}
 
 @keyframes trocar{
     0%{
