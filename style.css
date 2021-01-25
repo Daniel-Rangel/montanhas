@@ -16,10 +16,14 @@ body{
 
 .montanhas{
     max-width: 1200px;
+    min-height:300px;
     margin: 0 auto;
     text-align: center;
     overflow: visible;
+    transition: height 3s ease-in-out;
 }
+
+
 
 .montanhas__title{
     font-size: 3em;
@@ -51,7 +55,8 @@ body{
 /* descrição */
 
 .montanhas_artigos{
-    width: 800px;
+    max-width: 800px;
+    height: 300px;
     display: flex;
     position: relative;
     animation: aparecer 3s normal;
@@ -107,21 +112,14 @@ body{
 
 @keyframes aparecer{
     0%{
-        width: 50px;
-        height: 0.1%;
-    }
-    25%{
-        width: 50px;
-        height: 50%;
-    }
-    40%{
-        width: 50px;
-        height: 100%;
+        width: 0.1%;
+        height: 1%;
     }
     50%{
-        width: 350px;
+        width: 0.1%;
+        height: 100%;
     }
     100%{
-        width: 800px;
+        width: 100%;
     }
 }

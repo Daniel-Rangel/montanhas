@@ -20,13 +20,11 @@ const listas = document.querySelectorAll('.menu__item')
 let img = document.querySelector('.artigo__img')
 let titulo = document.querySelector('.artigo_title')
 
-document.querySelector('.montanhas_artigos').classList.add('artigos--remove')
 img.classList.add('artigos--remove')
 document.querySelector('.artigos__descricao').classList.add('artigos--remove')
 
 listas.forEach(element => {
     element.addEventListener('click', ()=>{
-        document.querySelector('.montanhas_artigos').classList.remove('artigos--remove')
         img.classList.remove('animacao-Ativa')
 
         for(let mt of montes){
@@ -43,7 +41,7 @@ listas.forEach(element => {
         setTimeout(()=>{
             img.classList.remove('artigos--remove')
             document.querySelector('.artigos__descricao').classList.remove('artigos--remove')
-        },4000)
+        },000)
 
     })
 })
