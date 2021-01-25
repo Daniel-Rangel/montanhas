@@ -16,27 +16,34 @@ const montes = [
     }
 ]
 
-const listas = document.querySelectorAll(".menu__item")
-let img = document.querySelector(".img")
-let titulo = document.querySelector(".artigo_title")
+const listas = document.querySelectorAll('.menu__item')
+let img = document.querySelector('.artigo__img')
+let titulo = document.querySelector('.artigo_title')
 
-
+document.querySelector('.montanhas_artigos').classList.add('artigos--remove')
+img.classList.add('artigos--remove')
+document.querySelector('.artigos__descricao').classList.add('artigos--remove')
 
 listas.forEach(element => {
     element.addEventListener('click', ()=>{
-        for(let mt of montes){
+        document.querySelector('.montanhas_artigos').classList.remove('artigos--remove')
+        img.classList.remove('animacao-Ativa')
 
-            document.querySelector('.artigo__img').classList.remove('animacao-Ativa')
-            
+        for(let mt of montes){
             if(mt.nome == element.innerHTML){
-                let animacao = setTimeout(()=>{
-                    document.querySelector('.artigo__img').classList.add('animacao-Ativa')
+                setTimeout(()=>{
+                    img.classList.add('animacao-Ativa')
                     document.querySelector('.artigo_title').innerHTML = mt.nome
                     document.querySelector('.img').src = mt.img
+                    document.querySelector('.img').alt = mt.nome
                     document.querySelector('.artigo__texto').innerHTML = mt.descricao
-                },10)
-                animacao()
+                },100)   
             }
         }
+        setTimeout(()=>{
+            img.classList.remove('artigos--remove')
+            document.querySelector('.artigos__descricao').classList.remove('artigos--remove')
+        },4000)
+
     })
 })

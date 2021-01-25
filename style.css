@@ -54,12 +54,18 @@ body{
     width: 800px;
     display: flex;
     position: relative;
+    animation: aparecer 3s normal;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+.artigos--remove{
+    display: none;
 }
 
 .artigo__img{
     position: absolute;
     left: 0;
-    
 }
 
 .img{
@@ -83,15 +89,8 @@ body{
     text-align: justify;
 }
 
-/*teste de amação */
-/* .animacao-teste{
-    width: 200px;
-    height: 200px;
-    animation: trocar 4s infinite alternate;
-} */
-
 .animacao-Ativa{
-    animation: trocar 2s alternate;
+    animation: trocar 3s normal;
 }
 
 @keyframes trocar{
@@ -99,9 +98,30 @@ body{
         transform: scale(0.1);
     }
     50%{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     100%{
         transform: scale(1.0);
+    }
+}
+
+@keyframes aparecer{
+    0%{
+        width: 50px;
+        height: 0.1%;
+    }
+    25%{
+        width: 50px;
+        height: 50%;
+    }
+    40%{
+        width: 50px;
+        height: 100%;
+    }
+    50%{
+        width: 350px;
+    }
+    100%{
+        width: 800px;
     }
 }
