@@ -34,8 +34,7 @@ body{
 .menu__itens{
     display: flex;
     list-style: none;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-evenly;
     color: green;
     padding: 3em;
 }
@@ -56,12 +55,9 @@ body{
 
 .montanhas_artigos{
     max-width: 800px;
-    height: 300px;
     display: flex;
     position: relative;
-    animation: aparecer 3s normal;
     margin: 0 auto;
-    background-color: aquamarine;
 }
 
 .artigos--remove{
@@ -109,17 +105,41 @@ body{
         transform: scale(1.0);
     }
 }
+/* mobilie */
 
-@keyframes aparecer{
-    0%{
-        width: 0.1%;
-        height: 1%;
+@media screen and (max-width: 360px){
+    .montanhas{
+        max-width: 360px;
     }
-    50%{
-        width: 0.1%;
-        height: 100%;
+
+    .montanhas__title{
+        font-size: 1.5em;
+        margin: 20px 0;
     }
-    100%{
-        width: 100%;
+
+    .menu__itens{
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px 0;
+    }
+
+    .montanhas_artigos{
+        display: block;
+        position: initial;
+        width: 320px;
+    }
+
+    .artigo__img{
+        position: inherit;
+    }
+
+    .artigo_title{
+        font-size: 1.5em;
+    }
+
+    .artigo__texto{
+        width: 320px;
+        margin: 10px 0;
+        padding: 20px 10px;
     }
 }
