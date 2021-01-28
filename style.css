@@ -35,6 +35,7 @@ body{
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+    gap:40px;
     color: green;
     padding: 3em;
 }
